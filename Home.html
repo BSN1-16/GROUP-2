@@ -1,0 +1,303 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Political Awareness & Personal Well-Being</title>
+
+    <style>
+        :root {
+            --accent: #d84b4b;
+            --dark: #222;
+            --muted: #666;
+            --white: #fff;
+            --maxw: 1100px;
+            --header-h: 70px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: var(--dark);
+            background: #fff;
+        }
+
+        
+        .topbar {
+            height: var(--header-h);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid rgba(216,75,75,0.12);
+        }
+
+        .container {
+            width: 95%;
+            max-width: var(--maxw);
+            margin: 0 auto;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+        }
+
+            .menu a {
+                font-size: 13px;
+                text-decoration: none;
+                color: #222;
+            }
+
+       
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-inner {
+            background: linear-gradient(rgba(34, 34, 34, 0.45), rgba(34, 34, 34, 0.45)), url(https://media.istockphoto.com/id/1376322183/photo/people-with-raised-fists-at-a-demonstration-in-the-city.jpg?s=612x612&w=0&k=20&c=lreqV6fLbdQZXrQqGjShSsk8VwUlk4YzAcufXYSCnR0=) center/cover no-repeat;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: var(--white);
+            max-width: 920px;
+            padding: 20px;
+        }
+
+            .hero-content small {
+                display: block;
+                margin-bottom: 14px;
+                color: #eee;
+            }
+
+            .hero-content h2 {
+                font-size: 36px;
+                margin: 0 0 14px;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 1.02;
+            }
+
+        
+        .section {
+            padding: 60px 0;
+        }
+
+            .section h3 {
+                font-size: 24px;
+                text-align: center;
+                margin: 0 0 6px;
+            }
+
+            .section p.lead {
+                text-align: center;
+                color: var(--muted);
+                margin: 8px 0 28px;
+            }
+
+       
+        .card-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+            max-width: var(--maxw);
+            margin: 0 auto;
+        }
+
+        
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(16,16,16,0.06);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            }
+
+            .card img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover img {
+                transform: scale(1.12);
+            }
+
+        .card-body {
+            padding: 16px;
+        }
+
+        .card h4 {
+            margin: 0 0 8px;
+            font-size: 16px;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+      
+        .footer {
+            padding: 24px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+            color: var(--muted);
+        }
+
+       
+        @media (max-width:720px) {
+            .hero-content h2 {
+                font-size: 24px;
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+
+       
+
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container nav">
+            <nav class="menu">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CAMPAIGN</a>
+                <a href="#">PAGES</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    
+   
+
+    <main>
+
+       
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <small>Awareness begins with all of us!</small>
+                    <h2>ARISE, AWAKE, STOP NOT<br> TILL THE GOAL IS REACHED</h2>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="section">
+            <div class="container">
+                <h3>OUR ADVOCACIES</h3>
+                <p class="lead">Promoting political consciousness and personal well-being for a better society</p>
+            </div>
+
+            <div class="card-row">
+
+
+                <a href="Flood Control.html" class="card-link">
+                    <article class="card">
+                        <img src="https://i.guim.co.uk/img/media/6e48276fca398395453fc10369d80fb0e33bcb27/458_0_4225_3380/master/4225.jpg?width=1200&quality=85&auto=format&fit=max&s=bda2fc074c3aa5f3758d0670a0f64f23" alt="protest image">
+                        <div class="card-body">
+                            <h4>Citizens stand up against flood control corruption.</h4>
+                            <p>People protest corruption in flood control projects—funds meant to protect communities are misused, placing lives at risk.</p>
+                        </div>
+                    </article>
+                </a>
+
+
+                <a href="Fair Wages.html" class="card-link">
+                    <article class="card">
+                        <img src="https://media.philstar.com/photos/2024/03/25/c1320_2024-03-25_22-57-04.jpg" alt="protest image">
+                        <div class="card-body">
+                            <h4>Citizens stand up for fair wages and affordable goods.</h4>
+                            <p>Workers demand fair pay and relief from rising prices to secure a dignified life for their families.</p>
+                        </div>
+                    </article>
+                </a>
+
+
+                <a href="Human Rights.html" class="card-link">
+                    <article class="card">
+                        <img src="https://www.hrw.org/sites/default/files/styles/opengraph/public/media_2024/12/202412asia_philippines_wr.jpg" alt="protest image">
+                        <div class="card-body">
+                            <h4>Human Rights Day demonstration in Manila.</h4>
+                            <p>An activist protests the anti-communist task force and counterterrorism law during a rights rally.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="Education Rights.html" class="card-link">
+                    <article class="card">
+                        <img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t39.30808-6/490475737_1122954559871691_6354308267615510495_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hriJy-JlW48Q7kNvwFKAgLf&_nc_oc=AdkXblRcIQDp0DjpAMQSTn3qqUKEbk2hXcBm4RHqmZqkVpHXgvKhtyBAw3-RxPHRR8s&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_gid=QYH7NFsJDKHhhdIX9y5D_Q&oh=00_Afg0308lSBwjT-_noRhbyuUDJCBB_PFe42m9VOxLYFAX1w&oe=692A1D5F" alt="protest image">
+                        <div class="card-body" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px; line-height: 1.75; color: #222;">
+                            <h4>Education Rights Under Threat Amid VP Impeachment</h4>
+                            <p>Protests erupt as billions meant for public education are allegedly misused, leaving students and teachers struggling with classroom shortages, outdated textbooks, and overworked staff.</p>
+                        </div>
+                    </article>
+                </a>
+
+
+                <a href="Farmers.html" class="card-link">
+                    <article class="card">
+                        <img src="https://philippines.licas.news/wp-content/uploads/2025/08/viber_image_2025-08-13_10-34-57-142-1392x1048.jpg" alt="protest image">
+                        <div class="card-body">
+                            <h4>Farmers Protest Amid Rice Crisis</h4>
+                            <p>Thousands of Filipino farmers took to the streets, demanding fair prices for their harvest and calling for government support amid falling palay prices and rising economic challenges.</p>
+
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            © 2025 All Rights Reserved
+        </div>
+
+      
+
+    </footer>
+
+</body>
+</html>
